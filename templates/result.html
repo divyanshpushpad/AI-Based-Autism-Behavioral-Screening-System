@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <div class="result-card">
+
+            <h1>Prediction Result</h1>
+
+            <h2>{{ prediction }}</h2>
+
+            <p>
+             
+                This result is generated using a trained Random Forest
+                Machine Learning model based on behavioral screening data.
+            </p>
+
+            <p>
+                This system is designed for educational and screening purposes only.
+                Please consult a healthcare professional for proper diagnosis and evaluation.
+            </p>
+
+            <a href="/">Try Another Prediction</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h2>Autism Prediction AI</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+
+</nav>
+
+</html>

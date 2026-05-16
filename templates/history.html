@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="history-container">
+
+        <h1>Prediction History</h1>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Age</th>
+                <th>Prediction</th>
+                <th>Date</th>
+            </tr>
+
+            {% for record in records %}
+
+            <tr>
+                <td>{{ record.id }}</td>
+                <td>{{ record.age }}</td>
+                <td>{{ record.prediction }}</td>
+                <td>{{ record.date }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h2>Autism Prediction AI</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+
+</nav>
+
+</html>

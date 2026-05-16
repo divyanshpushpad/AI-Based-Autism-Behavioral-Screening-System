@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autism Prediction System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+    <div class="logo">
+        <h2>Autism Prediction AI</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>AI-Based Autism Prediction System</h1>
+
+            <p>
+                Predict autism traits using behavioral data and machine learning.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h2>Behavioral Screening Form</h2>
+
+            <form action="/predict" method="POST">
+
+                <div class="input-grid">
+
+    <div>
+        <label>1. Does the person avoid eye contact?</label>
+        <select name="A1" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>2. Does the person struggle in social situations?</label>
+        <select name="A2" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>3. Does the person repeat words or actions?</label>
+        <select name="A3" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>4. Does the person find communication difficult?</label>
+        <select name="A4" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>5. Does the person prefer being alone?</label>
+        <select name="A5" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>6. Does the person show repetitive behavior?</label>
+        <select name="A6" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>7. Does the person have unusual reactions to sound or light?</label>
+        <select name="A7" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>8. Does the person struggle to understand emotions?</label>
+        <select name="A8" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>9. Does the person get anxious in social gatherings?</label>
+        <select name="A9" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>10. Does the person have difficulty making friends?</label>
+        <select name="A10" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter Age" required>
+    </div>
+
+</div>
+
+                
+
+                <button type="submit">Predict Result</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+
+        <div class="info-card">
+
+            <h2>About The Project</h2>
+
+            <p>
+                This project uses Artificial Intelligence and Machine Learning
+                techniques to analyze behavioral screening data and predict
+                autism traits.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+      <p>
+         Final Year Project | AI-Based Autism Behavioral Screening System
+      </p>
+
+      <p>
+         Developed using Flask, Machine Learning and SQLite
+      </p>
+
+    </footer>
+
+</body>
+
+</html>
