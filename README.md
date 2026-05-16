@@ -6,7 +6,6 @@ This project is an AI-powered web application developed using Machine Learning a
 
 The system analyzes behavioral questionnaire responses and predicts autism traits using a trained Random Forest Machine Learning model.
 
----
 
 ## Features
 
